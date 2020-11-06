@@ -3,36 +3,84 @@
 * {
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
 }
 
 body {
   margin: 0px;
   padding: 0px;
+  display: flex;
+  justify-content: center;
   font-family: "Poppins", sans-serif;
+  background: #f4f1fa;
 }
 
 /* For login form */
-.form-container {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
-.login-form {
-  position: relative;
+.container {
+  width: 100%;
+  padding: 80px 60px 0px 60px;
+  max-width: 1300px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
 
-  height: 50%;
+.heading-area {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.heading-area h3 {
+  float: right;
+  margin: 30px;
+  font-size: xx-large;
+  color: purple;
+}
+.heading-area img {
+  float: left;
+  margin: 10px;
+}
+
+.login-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding-top: 80px;
+}
+
+.login-container h3 {
+  font-size: 60px;
+  color: purple;
+}
+.login-container h4 {
+  font-size: 30px;
+  font-weight: unset;
+  color: #b48ab4;
+}
+
+.login-form {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  width: 50%;
+  border-radius: 10px;
+  height: 350px;
+  border: 1px solid purple;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .login-form input {
-  padding: 10px;
-  margin: 5px;
+  font-family: "Poppins";
+  width: 80%;
+  padding: 20px;
+  margin: 20px;
   border-radius: 5px;
   outline: none;
   border: 1px solid gray;
@@ -57,20 +105,29 @@ body {
   color: purple;
 }
 
+.button-forgotpassword {
+  width: 80%;
+}
+
 .btn {
   margin: 5px;
-  padding: 15px;
-  border-radius: 50px;
+  padding: 10px 15px;
+  border-radius: 5px;
   text-align: center;
   align-self: center;
-  background: none;
+  background: purple;
   outline: none;
-  border: 1px solid purple;
-  font-family: "Open Sans", sans-serif;
+  color: white;
+  float: right;
 }
 a {
   text-decoration: none;
-  color: black;
+  color: purple;
+  font-weight: bold;
+}
+
+small {
+  color: purple;
 }
 
 /* For Dashboard */
@@ -92,7 +149,7 @@ a {
 }
 
 img {
-  height: 25px;
+  height: 75px;
 }
 
 .dashboard-title {
