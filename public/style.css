@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Poppins", sans-serif;
+}
+
+/* For login form */
+.form-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 50%;
+}
+
+.login-form input {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid gray;
+}
+
+.form-input {
+  padding: 10px;
+  margin: 5px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: #609e60;
+}
+
+.heading {
+  position: absolute;
+  top: 20%;
+  left: 0px;
+  text-align: center;
+  width: 100%;
+  color: purple;
+}
+
+.btn {
+  margin: 5px;
+  padding: 15px;
+  border-radius: 50px;
+  text-align: center;
+  align-self: center;
+  background: none;
+  outline: none;
+  border: 1px solid purple;
+  font-family: "Open Sans", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* For Dashboard */
+.dashboard {
+  border: 5px solid rgb(23, 158, 21);
+  border-radius: 10px;
+  width: auto;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-top: 5vh;
+}
+
+.folder-area {
+  margin: 10px;
+  height: 44.5vh;
+  border-radius: 20px;
+}
+
+img {
+  height: 25px;
+}
+
+.dashboard-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  font-size: 10px;
+  padding: 10px;
+}
+
+.dashboard-title h1 {
+  margin-left: 10px;
+}
+
+.operations-area {
+  border: 2px solid rgb(23, 158, 21);
+  margin: 10px;
+  height: 44.5vh;
+  border-radius: 20px;
+}
+
+.folders-list {
+  border: 2px solid rgb(23, 158, 21);
+  width: 40%;
+  height: 80%;
+  margin: 20px;
+  border-radius: 20px;
+}
+
+.folders {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-edit {
+  margin: 5px;
+  padding: 15px;
+  border-radius: 25px;
+  text-align: center;
+  align-self: center;
+  background: none;
+  outline: none;
+  border: 2px solid lightskyblue;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* for popup form */
+
+.popup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.popup-form {
+  border: 2px solid rgb(23, 158, 21);
+  display: flex;
+  flex-direction: column;
+  height: 50%;
+  width: 50%;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.sources-area {
+  display: flex;
+
+  width: 100%;
+  padding: 10px;
+  align-items: center;
+}
+
+.popup-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 33.33%;
+  margin: 10px;
+}
+
+.file-item-column {
+  outline: none;
+  width: 100%;
+}
+
+.file-operation {
+  padding: 10px;
+  border-radius: 15px;
+  outline: none;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 2px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 20px;
+}
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 20px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.file-item-column option {
+  padding: 10px;
+}
+
+.file-operation option {
+  padding: 50px;
+}
+
+.final-form input {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 10px;
+  outline: none;
+  border: 1px solid gray;
+}
+
+.final-area {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px;
+  align-items: center;
+}
+
+.final-form {
+  border: 2px solid rgb(23, 158, 21);
+  display: flex;
+  flex-direction: column;
+  height: 50%;
+  width: 50%;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.final-input {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin: 30px;
+}
+
+.btn-final {
+  padding: 10px;
+  border-radius: 15px;
+  text-align: center;
+
+  background: none;
+  outline: none;
+  border: 2px solid green;
+  font-family: "Open Sans", sans-serif;
+}
+
+.final-label {
+  display: flex;
+  flex-direction: column;
+}
+
+.final-file-operation {
+  padding: 10px;
+  border-radius: 15px;
+  outline: none;
+
+  margin: 5px 5px 0px 5px;
+}

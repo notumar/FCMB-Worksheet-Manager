@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public/style.css">
+    <title>Popup</title>
+</head>
+
+<body>
+    <div id="main" class="popup-container">
+        <form action="#" method="post" class="popup-form">
+
+            <h1 class="popup-heading">Edit Worksheet</h1>
+
+            <div class="sources-area">
+                <div class="popup-input">
+                    <label for="source-file-a">Column A</label>
+                    <select name="Source-A" class="file-item-column" id="source-file" multiple="true">
+                        <option value="Foo">Foo</option>
+                        <option value="Bar">Bar</option>
+                        <option value="Lorem">Lorem</option>
+                        <option value="Ipsum">Ipsum</option>
+                        <option value="Dolores">Dolores</option>
+                    </select>
+                </div>
+                <div class="popup-input">
+                    <select name="Source-B" class="file-operation">
+                        <option value="Foo">Foo</option>
+                        <option value="Bar">Bar</option>
+                        <option value="Lorem">Lorem</option>
+                        <option value="Ipsum">Ipsum</option>
+                        <option value="Dolores">Dolores</option>
+                    </select>
+                </div>
+                <div class="popup-input">
+                    <label for="source-file-b">Column B</label>
+                    <select name="Source-B" class="file-item-column" id="source-file-b" multiple="true">
+                        <option value="Foo">Foo</option>
+                        <option value="Bar">Bar</option>
+                        <option value="Lorem">Lorem</option>
+                        <option value="Ipsum">Ipsum</option>
+                        <option value="Dolores">Dolores</option>
+                    </select>
+                </div>
+            </div>
+
+
+            <div class="submit-buttons">
+                <span class="btn"><a href="./finalize.html">Save to Database</a> </span>
+                <span class="btn"><a href="./finalize.html">Save to Folder</a> </span>
+            </div>
+
+        </form>
+    </div>
+</body>
+
+</html>
