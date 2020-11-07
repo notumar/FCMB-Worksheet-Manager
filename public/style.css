@@ -132,20 +132,15 @@ small {
 
 /* For Dashboard */
 .dashboard {
-  border: 5px solid rgb(23, 158, 21);
-  border-radius: 10px;
-  width: auto;
-  height: 100%;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  padding-top: 5vh;
+  width: 100%;
+  max-width: 1300px;
+  margin-top: 20px;
 }
 
 .folder-area {
   margin: 10px;
-  height: 44.5vh;
-  border-radius: 20px;
+  height: 40vh;
+  border-radius: 10px;
 }
 
 img {
@@ -153,28 +148,61 @@ img {
 }
 
 .dashboard-title {
-  position: absolute;
-  top: 0;
-  left: 0;
   display: flex;
-  font-size: 10px;
-  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+.side-title {
+  display: flex;
+  align-items: center;
+}
+.dashboard-title h1 {
+  font-size: xx-large;
+  color: purple;
+  margin-left: 15px;
+}
+.profile-logout {
+  display: flex;
+  margin-right: 30px;
+}
+.profile-logout h2 {
+  color: #b48ab4;
 }
 
-.dashboard-title h1 {
+.logout {
+  fill: purple;
+  outline: none;
+  width: 30px;
   margin-left: 10px;
+}
+.dashboard-label {
+  font-size: 20px;
+  font-weight: bold;
+  color: #b48ab4;
+  margin: 30px 0px 0px 30px;
+}
+
+.dashboard-logo {
+  margin-left: 30px;
+  width: 50px;
 }
 
 .operations-area {
-  border: 2px solid rgb(23, 158, 21);
-  margin: 10px;
-  height: 44.5vh;
-  border-radius: 20px;
+  border: 1px solid rgb(23, 158, 21);
+  margin: 0px 30px;
+  min-height: 30vh;
+  border-radius: 10px;
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+    rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+  background: white;
 }
 
 .folders-list {
-  border: 2px solid rgb(23, 158, 21);
+  border: 1px solid rgb(23, 158, 21);
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+    rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
   width: 40%;
+  background: white;
   height: 80%;
   margin: 20px;
   border-radius: 20px;
@@ -205,19 +233,36 @@ img {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  width: 100%;
+  max-width: 1300px;
 }
 
 .popup-form {
-  border: 2px solid rgb(23, 158, 21);
+  border: 1px solid purple;
   display: flex;
   flex-direction: column;
   height: 50%;
   width: 50%;
+  background: white;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
   justify-content: space-around;
   align-items: center;
   border-radius: 10px;
 }
+.popup-heading {
+  color: purple;
+}
 
+.sources-area label {
+  font-size: x-large;
+  color: #b48ab4;
+}
+
+.sources-area label {
+  font-size: x-large;
+  color: #b48ab4;
+}
 .sources-area {
   display: flex;
 
@@ -236,23 +281,39 @@ img {
 }
 
 .file-item-column {
+  border: 1px solid purple;
   outline: none;
   width: 100%;
+  border-radius: 10px;
+  font-family: "Poppins", sans-serif;
+  background: white;
+  text-align: center;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
 .file-operation {
   padding: 10px;
-  border-radius: 15px;
+  border-radius: 10px;
   outline: none;
+  background: purple;
+  color: white;
+  font-family: "Poppins", sans-serif;
 }
 
+.submit-buttons a {
+  color: white;
+  font-weight: unset;
+  padding: 10px;
+}
 ::-webkit-scrollbar {
-  width: 5px;
+  width: 3px;
   border-radius: 2px;
 }
 ::-webkit-scrollbar-track {
   background: #f1f1f1;
   border-radius: 20px;
+  margin: 10px 0px;
 }
 ::-webkit-scrollbar-thumb {
   background: #888;
@@ -272,10 +333,11 @@ img {
 
 .final-form input {
   padding: 10px;
-  margin: 5px;
+  margin: 5px 5px 0px 5px;
   border-radius: 10px;
   outline: none;
   border: 1px solid gray;
+  font-family: "Poppins", sans-serif;
 }
 
 .final-area {
@@ -287,12 +349,15 @@ img {
 }
 
 .final-form {
-  border: 2px solid rgb(23, 158, 21);
+  border: 1px solid purple;
   display: flex;
   flex-direction: column;
   height: 50%;
   width: 50%;
-  justify-content: space-evenly;
+  background: white;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  justify-content: space-around;
   align-items: center;
   border-radius: 10px;
 }
@@ -300,35 +365,45 @@ img {
 .final-input {
   display: flex;
   align-items: flex-end;
-  justify-content: center;
+  justify-content: flex-start;
   margin: 30px;
+  width: 50%;
+  color: #b48ab4;
 }
 
 .btn-final {
-  padding: 10px;
-  border-radius: 15px;
-  text-align: center;
-
-  background: none;
+  padding: 7px 12px 7px;
+  border-radius: 10px;
+  background: purple;
   outline: none;
-  border: 2px solid green;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
+.btn-final a {
+  color: white;
+  font-weight: unset;
+  font-size: small;
+}
 .final-label {
   display: flex;
   flex-direction: column;
+  width: 90%;
 }
 
 .final-file-operation {
   padding: 10px;
   border-radius: 15px;
   outline: none;
+  font-family: "Poppins", sans-serif;
 
   margin: 5px 5px 0px 5px;
 }
 
 @media only screen and (max-width: 600px) {
+  /* for login */
+  .container {
+    padding-top: 40px;
+  }
   .login-container {
     flex-direction: column;
   }
@@ -336,5 +411,72 @@ img {
   .login-form {
     margin-top: 50px;
     width: 100%;
+  }
+  img {
+    height: 50px;
+  }
+  .heading-area h3 {
+    font-size: 25px;
+  }
+
+  /* for dashboard */
+
+  .dashboard-title h1 {
+    display: none;
+  }
+
+  .profile-logout {
+    margin-right: 15px;
+  }
+  .profile-logout h2 {
+    font-size: larger;
+  }
+  .logout {
+    width: 20px;
+  }
+  .dashboard-label {
+    font-size: 15px;
+  }
+  .folder-area {
+    height: 50vh;
+  }
+  .operations-area {
+    min-height: 10vh;
+  }
+  .folders {
+    flex-direction: column;
+  }
+  .folders-list {
+    width: 80%;
+    height: 100%;
+  }
+
+  /* for popup */
+  .popup-form {
+    width: 80%;
+    height: 90%;
+  }
+  .popup-heading {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: x-large;
+  }
+  .popup-input {
+    width: 80%;
+  }
+  .sources-area {
+    flex-direction: column;
+    width: 100%;
+  }
+  .sources-area label {
+    font-size: revert;
+  }
+  .final-form {
+    width: 80%;
+  }
+  .final-input {
+    margin: 15px;
+    width: 92%;
   }
 }
