@@ -403,10 +403,19 @@ img {
 @media only screen and (max-width: 600px) {
   /* for login */
   .container {
-    padding-top: 40px;
+    padding-top: 30px;
   }
   .login-container {
     flex-direction: column;
+    padding-top: 20px;
+  }
+  .login-container h3 {
+    font-size: 40px;
+  }
+  .login-container h4 {
+    font-size: 30px;
+    font-weight: unset;
+    color: #b48ab4;
   }
 
   .login-form {
@@ -418,6 +427,7 @@ img {
   }
   .heading-area h3 {
     font-size: 25px;
+    margin: 0px 0px 0px 40px;
   }
 
   /* for dashboard */
@@ -436,7 +446,9 @@ img {
     width: 20px;
   }
   .dashboard-label {
-    font-size: 15px;
+    font-size: 12px;
+    font-weight: 900;
+    margin: 10px 0px 0px 30px;
   }
   .folder-area {
     height: 50vh;
@@ -450,6 +462,7 @@ img {
   .folders-list {
     width: 80%;
     height: 100%;
+    margin: 10px;
   }
 
   /* for popup */
