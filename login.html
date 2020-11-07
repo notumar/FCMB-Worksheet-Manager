@@ -10,23 +10,27 @@
 
 <body>
 
-    <div id="main" class="form-container">
-        <form action="#" method="post" class="login-form">
-
-            <h1 class="heading">Worksheet Manager</h1>
-
-            <div class="form-input">
-                <label for="username">Username:</label>
-                <input type="text" name="Username" id="username">
+    <div id="main" class="container">
+        <div class="heading-area">
+            <img src="./public/images/First City Monument Bank Ltd Logo.svg" alt="FCMB logo">
+            <h3>Worksheet Manager</h3>
+        </div>
+        <div class="login-container">
+            <div class="welcome-messages">
+                <h3>Welcome</h3>
+                <h4>Please sign in</h4>
             </div>
+            <form action="./dashboard.html" class="login-form" method="post">
+                <input type="text" name="username" class="login-input" placeholder="Username">
+                <input type="password" name="password" class="login-input" placeholder="Password">
+                <div class="button-forgotpassword">
+                    <span class="btn">Login</span>
+                    <small>Forgot Password? <a href="#">Contact Support</a></small>
+                </div>
 
-            <div class="form-input">
-                <label for="password">Password:</label>
-                <input type="password" name="Password" id="password">
-            </div>
+            </form>
+        </div>
 
-            <span class="btn"><a href="./dashboard.html">Login</a> </span>
-        </form>
     </div>
 
 
