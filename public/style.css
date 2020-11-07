@@ -36,13 +36,12 @@ body {
 
 .heading-area h3 {
   float: right;
-  margin: 30px;
+
   font-size: xx-large;
   color: purple;
 }
 .heading-area img {
   float: left;
-  margin: 10px;
 }
 
 .login-container {
@@ -403,19 +402,18 @@ img {
 @media only screen and (max-width: 600px) {
   /* for login */
   .container {
-    padding-top: 30px;
+    padding-top: 50px;
   }
   .login-container {
     flex-direction: column;
-    padding-top: 20px;
+    padding-top: 30px;
   }
   .login-container h3 {
-    font-size: 40px;
+    font-size: 30px;
   }
   .login-container h4 {
-    font-size: 30px;
+    font-size: 20px;
     font-weight: unset;
-    color: #b48ab4;
   }
 
   .login-form {
@@ -426,8 +424,8 @@ img {
     height: 50px;
   }
   .heading-area h3 {
-    font-size: 25px;
-    margin: 0px 0px 0px 40px;
+    font-size: 17px;
+    margin: 0px;
   }
 
   /* for dashboard */
